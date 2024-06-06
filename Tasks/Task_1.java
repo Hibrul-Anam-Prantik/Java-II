@@ -1,5 +1,7 @@
 package Tasks;
 
+import java.util.Scanner;
+
 public class Task_1 {
     public static void main(String[] args) {
         // A
@@ -23,13 +25,37 @@ public class Task_1 {
         System.out.println("Product: " + varD * xD);
         System.out.println("Division: " + varD / xD);
         // E
-        double var_D = 5.0;
-        System.out.println("Double Variable: " + var_D);
-        int xI = 3;
-        var_D += xI;
-        System.out.println("Addition: " + var_D);
-        var_D = 5; // initializing var again, as my decladed variable was 5
-        System.out.println("Product: " + var_D * xI);
-        System.out.println("Division: " + var_D / xI);
+        varD = 5.0;
+        System.out.println("Double Variable: " + varD);
+        x = 3;
+        varD += x;
+        System.out.println("Addition: " + varD);
+        varD = 5; // initializing var again, as my decladed variable was 5
+        System.out.println("Product: " + varD * x);
+        System.out.println("Division: " + varD / x);
+        // F
+        String varS = "Hello ";
+        String xS = "World.";
+        varS += xS;
+        System.out.println("Addition: " + varS); // the addition for string works like: if we add two strings (i)
+                                                 // "CSE111", (ii) "is Awesome", then the new string will be
+                                                 // "CSE111is Awesome"; it simple connects 2 strings like this
+        // if 1st var is int and 2nd is sting
+        var = 5;
+        varS = "number";
+        // var += varS; can't execute as int+String isn't possible
+        System.out.println(var + varS);
+        varS = "Number";
+        var = 5;
+        System.out.println(varS + var);
+        // G
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter an Integer: ");
+        var = sc.nextInt();
+        System.out.print("Enter an Integer: ");
+        x = sc.nextInt();
+        var += x;
+        System.out.println(var);
+        sc.close();
     }
 }
