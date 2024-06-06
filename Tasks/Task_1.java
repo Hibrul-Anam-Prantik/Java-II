@@ -12,7 +12,7 @@ public class Task_1 {
         // C
         var = 5; // initializing var again, as my decladed variable was 5
         System.out.println("Product: " + var * x);
-        System.out.println("Division: " + var * 1.0 / x);
+        System.out.println("Division: " + var / x);
         // D
         double varD = 5.0;
         System.out.println("Double Variable: " + varD);
