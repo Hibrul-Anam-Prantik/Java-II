@@ -45,9 +45,11 @@ public class Task_1 {
         varS = "number";
         // var += varS; can't execute as int+String isn't possible
         System.out.println(var + varS);
+        // now if 1st var is String and 2nd is int
         varS = "Number";
         var = 5;
-        System.out.println(varS + var);
+        varS += var;
+        System.out.println(varS);
         // G
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter an Integer: ");
