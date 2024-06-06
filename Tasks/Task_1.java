@@ -37,9 +37,11 @@ public class Task_1 {
         String varS = "Hello ";
         String xS = "World.";
         varS += xS;
-        System.out.println("Addition: " + varS); // the addition for string works like: if we add two strings (i)
-                                                 // "CSE111", (ii) "is Awesome", then the new string will be
-                                                 // "CSE111is Awesome"; it simple connects 2 strings like this
+        System.out.println("Addition: " + varS); /*
+                                                  * the addition for string works like: if we add two strings (i)
+                                                  * "CSE111", (ii) "is Awesome", then the new string will be "CSE111is
+                                                  * Awesome"; it simple connects 2 strings like this
+                                                  */
         // if 1st var is int and 2nd is sting
         var = 5;
         varS = "number";
