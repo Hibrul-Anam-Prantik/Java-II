@@ -1,4 +1,4 @@
-package Tasks;
+package Tasks_LA01;
 
 public class Task_2 {
     public static void main(String[] args) {

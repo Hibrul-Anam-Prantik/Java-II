@@ -1,4 +1,4 @@
-package Tasks;
+package Tasks_LA01;
 
 import java.util.Scanner;
 
