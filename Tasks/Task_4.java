@@ -8,6 +8,7 @@ public class Task_4 {
         int n = sc.nextInt();
         int m = 1;
         multiplication_table(n, m);
+        sc.close();
     }
 
     public static void multiplication_table(int a, int b) {
