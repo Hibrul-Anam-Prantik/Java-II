@@ -25,6 +25,6 @@ public class Task_8 {
         } else if (a == 2) {
             return "Fall";
         }
-        return "Summer";
+        return "Summer"; // 3
     }
 }
