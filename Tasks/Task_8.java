@@ -7,7 +7,7 @@ public class Task_8 {
         Scanner sc = new Scanner(System.in);
         int id = sc.nextInt(); // 24101230 -> 8 digits ;
         int year = year(id);
-        String session = session(id / 100000);
+        String session = session(id);
         System.out.println("Student Joined BRAC in " + session + " " + year);
         sc.close();
     }
@@ -18,7 +18,8 @@ public class Task_8 {
     }
 
     public static String session(int a) {
-        a %= 10;
+        a /= 100000; // 1st 3 digits
+        a %= 10; // 3rd digit
         if (a == 1) {
             return "Spring";
         } else if (a == 2) {
