@@ -45,7 +45,6 @@ public class Task_1 {
         // if 1st var is int and 2nd is sting
         var = 5;
         varS = "number";
-        // var += varS; can't execute as int+String isn't possible
         System.out.println(var + varS);
         // now if 1st var is String and 2nd is int
         varS = "Number";
