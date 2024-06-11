@@ -1,8 +1,7 @@
-package Tasks_LA01;
+package Quiz;
 
 import java.util.Scanner;
-
-public class Quiz_1
+public class Lab_Quiz_01 
 {
     public static void main(String[] args)
     {
