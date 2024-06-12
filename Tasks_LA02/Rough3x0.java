@@ -2,12 +2,12 @@ package Tasks_LA02;
 
 import java.util.Scanner;
 
-public class Task5 
+public class Rough3x0 
 {
-    public static void main(String[] args)
+    public static void main(String[] args) 
     {
-        int zeroCount = 0;
-        int numCount = 0;
+        int count1 = 0;
+        int ncount2 = 0;
         int sum = 0;
         Scanner sc = new Scanner(System.in);
         for(int i = 0; ; i++)
@@ -15,19 +15,19 @@ public class Task5
             int num = sc.nextInt();
             sum += num;
             if(num == 0){
-                zeroCount ++;
+                count1 ++;
             } else{
-                numCount ++;
-                zeroCount = 0;
+                ncount2 ++;
+                count1 = 0;
             }
-            if(zeroCount == 3){
+            if(count1 == 3){
                 break;
             }
         }
         if(sum == 0){
             System.out.println("No numbers found");
         } else{
-            double avg = (sum*1.0)/numCount;
+            double avg = (sum*1.0)/ncount2;
             System.out.println("Sum = "+sum);
             System.out.println("Average  = "+avg);
         }
