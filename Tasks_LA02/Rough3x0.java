@@ -25,10 +25,10 @@ public class Rough3x0
             if(count1 == 3){
                 break;
             }
-            if(i==0 || x > mx){
+            if((i==0 || x > mx) && x != 0){
                 mx = x;
             } 
-            if(i==0 || x < mn){
+            if((i==0 || x < mn) && x != 0){
                 mn = x;
             }
         }
