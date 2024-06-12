@@ -8,13 +8,13 @@ public class Rough3x0
     {
         int count1 = 0;
         int count2 = 0;
-        int sum = 0;
+        int s = 0;     // sum
         Scanner sc = new Scanner(System.in);
         for(int i = 0; ; i++)
         {
-            int num = sc.nextInt();
-            sum += num;
-            if(num == 0){
+            int x = sc.nextInt();
+            s += x;
+            if(x == 0){
                 count1 ++;
             } else{
                 count2 ++;
@@ -24,12 +24,12 @@ public class Rough3x0
                 break;
             }
         }
-        if(sum == 0){
+        if(s == 0){
             System.out.println("No numbers found");
         } else{
-            double avg = (sum*1.0)/count2;
-            System.out.println("Sum = "+sum);
-            System.out.println("Average  = "+avg);
+            double a = (s*1.0)/count2;   // average
+            System.out.println("Sum = "+s);
+            System.out.println("Average  = "+a);
         }
         sc.close();
     }
