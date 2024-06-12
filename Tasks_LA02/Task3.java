@@ -11,7 +11,8 @@ public class Task3
         int min = 0;
         int max = 0;
         int numCount = 0;
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i < 10; i++)
+        {
             int num = sc.nextInt();
             numCount++;
             sum += num;
@@ -22,10 +23,10 @@ public class Task3
                 min = num;
             }
         }
+        double avg = (sum*1.0)/numCount;
         System.out.println("Sum = "+sum);
         System.out.println("Minimum = "+min);
         System.out.println("Maximun = "+max);
-        double avg = (sum*1.0)/numCount;
         System.out.println("Average = "+avg);
         sc.close();
     }
