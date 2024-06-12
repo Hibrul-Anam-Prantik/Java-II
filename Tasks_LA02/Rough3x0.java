@@ -9,8 +9,8 @@ public class Rough3x0
         int count1 = 0;
         int count2 = 0;
         int s = 0;     // sum
-        int mn = 0; 
-        int mx = 0; 
+        int mn = 0;    // minimun
+        int mx = 0;    // maximum
         Scanner sc = new Scanner(System.in);
         for(int i = 0; ; i++)
         {
@@ -32,15 +32,17 @@ public class Rough3x0
                 mn = x;
             }
         }
-        if(s == 0){
+        if(s == 0)
+        {
             System.out.println("No numbers found");
-        } else{
+        } 
+        else
+        {
             double a = (s*1.0)/count2;   // average
             System.out.println("Sum = "+s);
             System.out.println("Minimum = "+mn);
             System.out.println("Maximun = "+mx);
             System.out.println("Average  = "+a);
         }
-        sc.close();
     }
 }
