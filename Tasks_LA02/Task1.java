@@ -34,7 +34,7 @@ public class Task1
                 System.out.print(", ");
             }
             j += increment;
-            increment++;    // common increment = 4
-        }
+            increment++;    //  increases everytime 
+        } 
     }
 }
