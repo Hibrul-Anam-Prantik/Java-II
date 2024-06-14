@@ -35,5 +35,6 @@ public class Task4
             System.out.println("Maximun = "+max);
             System.out.println("Average  = "+avg);
         }
+        sc.close();
     }    
 }

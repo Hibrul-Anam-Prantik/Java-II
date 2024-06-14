@@ -44,5 +44,6 @@ public class Rough3x0
             System.out.println("Maximun = "+mx);
             System.out.println("Average  = "+a);
         }
+        sc.close();
     }
 }

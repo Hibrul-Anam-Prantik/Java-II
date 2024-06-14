@@ -33,8 +33,8 @@ public class Task7
         // b
         num1 = 1;
         num2 = 1;
-        numNext = 2; 
-        numUser = sc.nextInt();    /// sum of first 2 number
+        numNext = 2;       // sum of first 2 number
+        numUser = sc.nextInt();    
         int sum = num1 + num2;        
         System.out.print(num1 +" "+num2+" ");
         for(int i = num2; ; i++)
