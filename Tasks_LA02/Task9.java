@@ -14,9 +14,7 @@ public class Task9
         //b
         int numB = sc.nextInt();
         int digitB = digitCount(numB);
-        System.out.println("Digits: "+digitB);
         int divider = divider(digitB);
-        System.out.println("Divider: "+divider);
         multiplier(numB,divider);
         sc.close();
     }
