@@ -6,17 +6,48 @@ public class Task9
     public static void main(String[] args)
     {
         Scanner sc =new Scanner(System.in);
-        int num = sc.nextInt();
-        int digit = 0;
-        if( num == 0){
-            digit++;
-        } else{
-            for(int i = num; i != 0; i/=10)
-            {
-                digit ++;
-            }
-        }
+        // a
+        int numA = sc.nextInt(); 
+        int digit = digitCount(numA);
         System.out.println(digit+" digits");
+        
+        //b
+        int numB = sc.nextInt();
+        int digitB = digitCount(numB);
+        System.out.println("Digits: "+digitB);
+        int divider = divider(digitB);
+        System.out.println("Divider: "+divider);
+        multiplier(numB,divider);
         sc.close();
-    }   
+    }
+    public static int digitCount(int num)
+        {    
+            int digit = 0;
+            if( num == 0){
+                digit++;
+            } else{
+                for(int i = num; i != 0; i/=10)
+                {
+                    digit ++;
+                }
+            }
+            return digit;
+        }
+    public static void multiplier(int numB, int divider)
+    {
+        if(numB == 0){
+            return;
+        }
+        System.out.print((numB / divider)*7+"  ");
+        
+        multiplier(numB % divider, divider/10);
+    }
+    public static int divider(int digit)
+    {
+        int divider = 1;
+        for(int i = 1; i < digit; i++){
+            divider *= 10;
+        }
+        return divider;
+    }  
 }
