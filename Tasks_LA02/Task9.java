@@ -13,9 +13,9 @@ public class Task9
         
         //b
         int numB = sc.nextInt();
-        int digitB = digitCount(numB);
-        int divider = divider(digitB);
-        multiplier(numB,divider);
+        int digitB = digitCount(numB);   // i calculated the digit number to decide, how many zeroes i need to divide the number by.
+        int divider = divider(digitB);    // for calcutating the diviser to get the 1st digit of the number
+        multiplier(numB,divider);     
         sc.close();
     }
     public static int digitCount(int num)
