@@ -10,6 +10,7 @@ public class Tester {
         sc.nextLine();
         Student s1 = new Student(numSt);
         s1.profileCreator(numSt);
+        System.out.println("OOP");
         sc.close();
     }
 }
