@@ -1,0 +1,12 @@
+package OOP;
+
+import java.util.Scanner;
+
+public class ClassTester 
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Tester check");
+        sc.close();
+    }    
+}
