@@ -26,6 +26,6 @@ public class Rough_09
       for (int i = 0; i < count; i++) {
           System.out.print(digits[i] * 7 + " ");
       }
-      sc.close();  
+      sc.close(); 
     } 
 }
