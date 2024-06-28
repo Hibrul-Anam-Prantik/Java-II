@@ -13,8 +13,8 @@ public class String_Task06
         // cheching for the consecutive duplicates
         for(int i = 1; i < str.length(); i++)
         {
-            if(str.charAt(i) != str.charAt(i-1))   // if the current index's char is not equals to the previous index's char; 
-            {                                      // then adding it the newStr
+            if(str.charAt(i) != str.charAt(i-1))    // if the current index's char is not equals to the previous index's char; 
+            {                                       // then adding it the newStr
                 newStr += str.charAt(i);
             }
         }
