@@ -7,17 +7,17 @@ public class String_Task04 {
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);
-        for(int i = 0; ; i++)      // using loop to keep taking inputs, intil the I get the desied input
+        for(int i = 0; ; i++)      // using loop to keep taking inputs, until the I get the desied input
         {
-            String str = sc.next();     // using .next(), because input must a signle word name
-            str = str.toLowerCase();     // as mentioned in question, input must be in lowercase
+            String str = sc.next().toLowerCase();     // using .next(), because input must a signle word name
+                                                     // as mentioned in question, input must be in lowercase
             boolean valid = false;     // this flag will determine if the outer loops contiues or not
             char[] chArr = new char[str.length()]; // making a array of the characters of "str"
             for(int j = 0; j < str.length(); j++)  
             {
                 chArr[j] = str.charAt(j);
             }
-        //    System.out.println(str+": "+Arrays.toString(chArr));
+            System.out.println(str+": "+Arrays.toString(chArr));
             // will find the unique characters to avoid duplicate counts
             char[] newArr = new char[chArr.length];
             int uniqueCount = 0;
