@@ -34,7 +34,7 @@ public class Array_Task05
             }
         }   
         // print new array
-        System.out.print("New Array: ");
+        System.out.print("New Array : ");
         for (int i = 0; i < j; i++)
         {
             System.out.print(newArr[i]+" ");
