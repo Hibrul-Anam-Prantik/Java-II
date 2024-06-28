@@ -12,31 +12,22 @@ public class Array_Task02
         {
             arr[i] = sc.nextInt();
         }
-        int max = arr[0];
+        int max = arr[0];   // assuming the 1st elements to be the maximun and minimun values
         int maxI = 0;
         int min = arr[0];
         int minI = 0;
         for( int i = 0; i < 4; i++)
         {
-            for( int j = i+1; j < 5; j++)
+            if(arr[i] > max)
+                {
+                    max = arr[i];
+                    maxI = i;
+                }
+            if(arr[i] < min)
             {
-                if(arr[j] > arr[i])
-                {
-            //        max = arr[j];
-                    maxI = j;
-                }
-                if(arr[j] < arr[i])
-                {
-            //        min = arr[j];
-                    minI = j;
-                }
+                min = arr[i];
+                minI = i;
             }
-            max = arr[maxI];
-            arr[maxI] = arr[i];
-            arr[i] = max;
-            min = arr[minI];
-            arr[minI] = arr[i];
-            arr[i] = min;
         }
         System.out.println("The largest number "+max+" was found at location "+maxI+".");
         System.out.println("The smallest number "+min+" was found at location "+minI+".");
