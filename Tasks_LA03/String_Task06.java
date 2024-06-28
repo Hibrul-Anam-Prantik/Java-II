@@ -9,26 +9,14 @@ public class String_Task06
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         String newStr = "";
-        for(int i = 0; i < str.length()-1; i++)
+        newStr += str.charAt(0);   // initialing the 1st char at the newStr
+        // cheching for the consecutive duplicates
+        for(int i = 1; i < str.length(); i++)
         {
-
-            char chOuter = str.charAt(i);
-            boolean match = false;
-            for ( int j = i+1; j < str.length(); j++)
-            {
-                char chInner = str.charAt(j);
-                int count = 0;
-                if( chOuter == chInner){
-                    count++;
-                }
-                if(count == 0){
-                    newStr += chOuter;
-                    break;
-                } else{
-                    newStr +="";
-                    continue;
-                }
-            } 
+            if(str.charAt(i) != str.charAt(i-1))   // if the current index's char is not equals to the previous index's char; 
+            {                                      // then adding it the newStr
+                newStr += str.charAt(i);
+            }
         }
         System.out.println(newStr);
         sc.close();

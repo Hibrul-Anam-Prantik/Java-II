@@ -39,5 +39,5 @@ public class Array_Task04
             System.out.println(uniqueArr[i]+" - "+count+" times");
         }
         sc.close();
-    }    
+    }   
 }
