@@ -11,7 +11,7 @@ public class String_Task04 {
         {
             String str = sc.next().toLowerCase();     // using .next(), because input must a signle word name
                                                      // as mentioned in question, input must be in lowercase
-            boolean valid = false;     // this flag will determine if the outer loops contiues or not
+            boolean valid = false;                  // this flag will determine if the outer loops contiues or not
             char[] chArr = new char[str.length()]; // making a array of the characters of "str"
             for(int j = 0; j < str.length(); j++)  
             {
@@ -51,9 +51,10 @@ public class String_Task04 {
                 if (j == uniqueCount - 1){
                     printer = true;
                 }
-                if(count > 1 || !printer){     // this is to handle the inputs that are not desired
+                if(count > 1 ){     // this is to handle the inputs that are not desired
                     System.out.println("\""+newArr[j]+"\""+" has been counted "+count+" times in the word "+ str);
-                } else if (i == 0 && count == 1 && printer){  // this will handle the case, where the the 1st input is our desied input
+                    continue;
+                } else if (i == 0 && count <= 1 ){  // this will handle the case, where the the 1st input is our desied input
                     System.out.println("You entered "+ str+".");
                     valid = true;
                     break;
