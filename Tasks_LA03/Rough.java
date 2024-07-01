@@ -1,19 +1,20 @@
 package Tasks_LA03;
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class Rough {
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         Scanner sc = new Scanner(System.in);
         for(int i = 0; ; i++)
         {
             String str = sc.next().toLowerCase();
             int len = str.length();
-            char[] chArr = uniqueChar(len, str);
+            char[] chArr = uniqueArrayMaker(len, str);  // making array of the unique characters, using method "uniqueArrayMaker()"
             int uniqueCount = chArr.length;
-            boolean printer = false;
-            boolean valid = false;
-            boolean flag = false;
+            boolean finish = false;     // this flag will break the loop; when got desied input
+            boolean valid = false;      // this flag will help to print the counter number, as directed
+            boolean printer = false;    // this flag will help to continue the process, and keep taking inputs
             for(int j = 0; j < uniqueCount; j++)
             {
                 int count = 0;
@@ -21,37 +22,37 @@ public class Rough {
                 for(int k = 0; k < str.length(); k++)
                 {
 
-                    if(chArr[j] == str.charAt(k))
+                    if(chArr[j] == str.charAt(k))   // checking for duplicate characters
                     {
                         count++;
                     }
                 }
                 if(count <= 1){
-                    valid  = true;
-                    
-                } else{
+                    valid  = true;   
+                } else {
                     valid = false;
                 }
                 if(!valid){
                     System.out.println("\""+chArr[j]+"\" has been counted "+count+" times in the word \""+str+"\".");
-                    flag = true;
+                    printer = true;
                 } else {
                     continue;
                 }   
             } 
-            if(flag){
+            if(printer){
                 System.out.println("Please enter another word.");
             } else{
                 System.out.println("You entered "+str+".");
-                printer = true;
+                finish = true;
             }
             
-            if(printer){
+            if(finish){    
                 break;
             }
+            sc.close();
         }
     }
-    public static char[] uniqueChar(int len, String str)
+    public static char[] uniqueArrayMaker(int len, String str)  // method to create unique Array of characters
     {
         char[] arr = new char[len];
         for(int i = 0 ; i < len; i++)
