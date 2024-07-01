@@ -33,7 +33,7 @@ public class Rough {
                     valid = false;
                 }
                 if(!valid){
-                    System.out.println(chArr[j]+" has been counted "+count+" times in the word "+str+".");
+                    System.out.println("\""+chArr[j]+"\" has been counted "+count+" times in the word \""+str+"\".");
                     flag = true;
                 } else {
                     continue;
