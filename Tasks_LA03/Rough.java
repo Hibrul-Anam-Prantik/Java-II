@@ -49,7 +49,7 @@ public class Rough {
             if(finish){    
                 break;
             }
-            sc.close();
+        //    sc.close();   can't close the scanner, otherwise the code wont work from the 2nd input
         }
     }
     public static char[] uniqueArrayMaker(int len, String str)  // method to create unique Array of characters
