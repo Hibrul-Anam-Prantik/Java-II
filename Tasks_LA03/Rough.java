@@ -62,6 +62,7 @@ public class Rough {
             } 
             if(valid){
                 System.out.println("You entered "+str+".");
+                printer = true;
             }
             if(printer){
                 break;
