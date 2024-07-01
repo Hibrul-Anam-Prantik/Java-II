@@ -36,7 +36,7 @@ public class String_Task04 {
                     uniqueCount++;
                 }
             }
-        //    System.out.println(str+"; Unique Array: "+Arrays.toString(chArr));
+            System.out.println(str+"; Unique Array: "+Arrays.toString(newArr));
             // now we will proceed to count the characters
             for(int j = 0; j < uniqueCount; j++)
             {
@@ -47,9 +47,6 @@ public class String_Task04 {
                     if(newArr[j] == chArr[k]){
                         count++;
                     }
-                }
-                if (j == uniqueCount - 1){
-                    printer = true;
                 }
                 if(count > 1 ){     // this is to handle the inputs that are not desired
                     System.out.println("\""+newArr[j]+"\""+" has been counted "+count+" times in the word "+ str);

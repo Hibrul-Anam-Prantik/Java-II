@@ -13,9 +13,11 @@ public class Rough {
             System.out.println(Arrays.toString(chArr));
             int uniqueCount = chArr.length;
             boolean printer = false;
+            boolean valid = false;;
             for(int j = 0; j < uniqueCount; j++)
             {
                 int count = 0;
+                valid = false;
                 for(int k = 0; k < str.length(); k++)
                 {
 
@@ -24,12 +26,20 @@ public class Rough {
                         count++;
                     }
                 }
+                
+                
                 if(count <= 1){
-                    continue;
-                } 
-                else {
-                     
+                    valid  = true;
+                    
+                } else{
+                    valid = false;
                 }
+                if(!valid){
+                    System.out.println(chArr[j]+" has been counted "+count+" times in the word "+str+".");
+                } else {
+                    continue;
+                }
+                
             /*     if( i == 0 && count <= 1){
                 //    printer = true;
                     System.out.println("You entered "+str+".");
@@ -50,6 +60,9 @@ public class Rough {
                 }
             */        
             } 
+            if(valid){
+                System.out.println("You entered "+str+".");
+            }
             if(printer){
                 break;
             }
