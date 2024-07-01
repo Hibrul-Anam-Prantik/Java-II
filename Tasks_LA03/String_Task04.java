@@ -4,68 +4,84 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class String_Task04 {
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        for(int i = 0; ; i++)      // using loop to keep taking inputs, until the I get the desied input
+        for(int i = 0; ; i++)
         {
-            String str = sc.next().toLowerCase();     // using .next(), because input must a signle word name
-                                                     // as mentioned in question, input must be in lowercase
-            boolean valid = false;                  // this flag will determine if the outer loops contiues or not
-            char[] chArr = new char[str.length()]; // making a array of the characters of "str"
-            for(int j = 0; j < str.length(); j++)  
-            {
-                chArr[j] = str.charAt(j);
-            }
-            System.out.println(str+": "+Arrays.toString(chArr));
-            // will find the unique characters to avoid duplicate counts
-            char[] newArr = new char[chArr.length];
-            int uniqueCount = 0;
-            for(int k = 0; k < chArr.length; k++)
-            {
-                boolean duplicate = false;
-                for(int l = 0; l < newArr.length; l++)
-                {
-                    if(chArr[k] == newArr[l]){
-                        duplicate = true;
-                        break;
-                    }
-                }
-                if(!duplicate){
-                    newArr[uniqueCount] = chArr[k];
-                    uniqueCount++;
-                }
-            }
-            System.out.println(str+"; Unique Array: "+Arrays.toString(newArr));
-            // now we will proceed to count the characters
+            String str = sc.next().toLowerCase();
+            int len = str.length();
+            char[] chArr = uniqueChar(len, str);
+            System.out.println(Arrays.toString(chArr));
+            int uniqueCount = chArr.length;
+            boolean printer = false;
+            boolean valid = false;
+            boolean flag = false;
             for(int j = 0; j < uniqueCount; j++)
             {
                 int count = 0;
-                boolean printer = false;
-                for(int k = 0; k < chArr.length; k++)
+                valid = false;
+                for(int k = 0; k < str.length(); k++)
                 {
-                    if(newArr[j] == chArr[k]){
+
+                    if(chArr[j] == str.charAt(k))
+                    {
                         count++;
                     }
                 }
-                if(count > 1 ){     // this is to handle the inputs that are not desired
-                    System.out.println("\""+newArr[j]+"\""+" has been counted "+count+" times in the word "+ str);
-                    continue;
-                } else if (i == 0 && count <= 1 ){  // this will handle the case, where the the 1st input is our desied input
-                    System.out.println("You entered "+ str+".");
-                    valid = true;
-                    break;
-                } else {       // this is to hande if we get our desied input from other than 1st input 
-                    System.out.println("Please enter another word.");
-                    System.out.println("You entered "+ str+".");
-                    valid = true;
-                    break;
+                if(count <= 1){
+                    valid  = true;
+                    
+                } else{
+                    valid = false;
                 }
+                if(!valid){
+                    System.out.println(chArr[j]+" has been counted "+count+" times in the word "+str+".");
+                    flag = true;
+                } else {
+                    continue;
+                }       
+            } 
+            if(flag){
+                System.out.println("Please enter another word.");
+            } else{
+                System.out.println("You entered "+str+".");
+                printer = true;
             }
-            if(valid){
+            if(printer){
                 break;
             }
+            sc.close();
         }
-        sc.close();
+    }
+    public static char[] uniqueChar(int len, String str)
+    {
+        char[] arr = new char[len];
+        for(int i = 0 ; i < len; i++)
+        {
+            arr[i] = str.charAt(i);
+        }
+        char[] newArr = new char[len];  // new array; to get the unique char; in order to avoid duplicate outputs
+        int uniqueCount = 0;   
+        for(int i = 0; i < len; i++)     // unique array creation
+        {
+            boolean duplicate = false;
+            for(int j = 0; j < len; j++)
+            {
+                if(arr[i] == newArr[j]){
+                    duplicate = true;
+                    break;
+                }
+            } 
+            if(!duplicate){     // interting values to unique array
+                newArr[uniqueCount] = arr[i];
+                uniqueCount++;
+            }   
+        }
+        char[] uniqueArr = new char[uniqueCount];
+        for(int i = 0; i < uniqueCount; i++)
+        {
+            uniqueArr[i] = newArr[i];
+        }
+        return uniqueArr;
     }
 }

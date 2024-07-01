@@ -10,7 +10,6 @@ public class Rough {
             String str = sc.next().toLowerCase();
             int len = str.length();
             char[] chArr = uniqueChar(len, str);
-            System.out.println(Arrays.toString(chArr));
             int uniqueCount = chArr.length;
             boolean printer = false;
             boolean valid = false;
@@ -27,8 +26,6 @@ public class Rough {
                         count++;
                     }
                 }
-                
-                
                 if(count <= 1){
                     valid  = true;
                     
@@ -40,27 +37,7 @@ public class Rough {
                     flag = true;
                 } else {
                     continue;
-                }
-                
-            /*     if( i == 0 && count <= 1){
-                //    printer = true;
-                    System.out.println("You entered "+str+".");
-                    printer = true;
-                    break;
-                    
-                } 
-                else if(count > 1){
-                    //    printer = true;
-                    System.out.println(chArr[j]+" has been counted "+count+" times in the word "+str+".");
-                    continue;
-                }
-                else {
-                    System.out.println("Please enter another word.");
-                    System.out.println("You entered "+ str+".");
-                    printer = true;
-                    break;
-                }
-            */        
+                }   
             } 
             if(flag){
                 System.out.println("Please enter another word.");
@@ -68,6 +45,7 @@ public class Rough {
                 System.out.println("You entered "+str+".");
                 printer = true;
             }
+            
             if(printer){
                 break;
             }
