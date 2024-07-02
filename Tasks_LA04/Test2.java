@@ -1,0 +1,18 @@
+package Tasks_LA04;
+
+public class Test2 
+{
+    public static void main(String [] args){
+        Student s1 = new Student();
+        System.out.println("Name of the Student: "+s1.name);
+        System.out.println("ID of the Student: "+s1.id);
+        s1.id = 123;
+        System.out.println("ID of the Student: "+s1.id);
+    }
+}
+class Student 
+{
+    public String name = "Bob";
+    public int id = 1;
+}
+  
