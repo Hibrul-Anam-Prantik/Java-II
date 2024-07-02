@@ -1,8 +1,16 @@
 package Tasks_LA04;
+
+//TASK 1
+
 // Design 
-
-
-
+/*
+public class University 
+{
+    public String name;
+    public String country;
+}
+*/
+// Tester
 public class UniversityTester 
 {
     public static void main(String[] args)
