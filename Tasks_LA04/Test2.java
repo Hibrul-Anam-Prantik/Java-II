@@ -1,5 +1,6 @@
 package Tasks_LA04;
 
+// TASK 2
 public class Test2 
 {
     public static void main(String [] args){
@@ -10,9 +11,3 @@ public class Test2
         System.out.println("ID of the Student: "+s1.id);
     }
 }
-class Student 
-{
-    public String name = "Bob";
-    public int id = 1;
-}
-  
