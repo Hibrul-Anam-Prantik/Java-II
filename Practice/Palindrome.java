@@ -27,8 +27,14 @@ public class Palindrome
             makePalindrome(word);
         }
     }
+
+    
     public static void makePalindrome(String word)
     {
-        System.out.println("Still on it");    
+        String newWord = "";
+        for(int i = 0; ; i++)
+        {
+            
+        }    
     }
 }
