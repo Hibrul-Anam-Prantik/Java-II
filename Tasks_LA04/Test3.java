@@ -1,13 +1,11 @@
 package Tasks_LA04;
-
 // TASK 3
-public class Test3 
-{
-    public static void main(String [] args){
-        Circle cr = new Circle();
-        System.out.println("Radius of the circle is "+ cr.radius); 
-        double pi = Math.PI;
-        System.out.println("The area of the circle is "+ (pi*cr.radius*cr.radius));
-        System.out.println("The circumference of the circle is "+ (2*pi*cr.radius));
-    }    
+public class Test3 {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        System.out.println("Name of the Student: " + s1.name);
+        System.out.println("ID of the Student: " + s1.id);
+        s1.id = 123;
+        System.out.println("ID of the Student: " + s1.id);
+    }
 }

@@ -3,7 +3,7 @@ package Tasks_LA04;
 // TASK 8
 public class Bird {
     public String name;
-    public int x;
+    int x;
 
     public void flyUp(int n) 
     {
