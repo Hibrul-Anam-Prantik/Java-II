@@ -1,29 +1,41 @@
 package Practice;
 
 public class Rough {
-    public static void main(String[] args) {
-        String s = "adamm";
-        s = s.toLowerCase();
-        int k = 1;
-        int l = 0;
-        for (int j = 0;; j++) {
-            String ns = "";
-            for (int i = 0; i < s.length(); i++) {
-                char c1 = s.charAt(l++);
-                if (i == 0) {
-                    char c2 = s.charAt(k++);
-                    ns += c2;
-                    ns += c1;
-                } else if (i == 1) {
-                    continue;
-                } else {
-                    ns += c1;
-                }
+    public String model="Unknown";
+
+    public int count=0;
+    public String s[]= new String[10000]; // assumption
+
+    public void printDetails() {
+        System.out.println("Phone Model "+model);
+
+        //System.out.println("Contacts Stored "+count);
+        if (count==0) {
+            System.out.println("Contacts Stored "+count);
+        } else if (count>0 && count<4) {
+            System.out.println("Contacts Stored " + count);
+            System.out.println("Stored Contacts:");
+            for (int i = 0; i < count; i++) {
+                System.out.println(s[i]);
             }
-            System.out.println(ns);
-            if (j == 10) {
-                break;
+        }
+        if(count>3){
+            System.out.println("Contacts Stored " + (count - 1));
+            System.out.println("Stored Contacts:");
+            for (int i = 0; i < count - 1; i++) {
+                System.out.println(s[i]);
             }
+        }
+    }
+
+    public void storeContact(String a) {
+
+        this.s[count++] = a;
+        // System.out.println("Contact Stored");
+        if(count>=4){
+            System.out.println("Memory full. New contact can't be stored.");
+        } else {
+            System.out.println("Contact Stored");
         }
     }
 }
