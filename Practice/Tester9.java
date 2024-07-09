@@ -2,7 +2,7 @@ package Practice;
 
 public class Tester9 {
   public static void main(String[] args) {
-    Rough phone1 = new Rough();
+    CellPhone phone1 = new CellPhone();
     phone1.printDetails();
     phone1.model = "Nokia 1100";
     System.out.println("1##################");
