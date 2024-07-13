@@ -1,6 +1,6 @@
 package OOP;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class TesterCat 
 {
