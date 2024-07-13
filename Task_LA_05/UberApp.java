@@ -7,10 +7,9 @@ public class UberApp
     public String phNum;    // mobile number
     public String location;
     public double distance;
-//    public double fare;
     public int rideNum = 3;      // number of rides
     public String[] locations;
-    int iL;       // index of locations[]
+    int iL;       // to keep track of the index of locations[]
     public void createProfile(String name, int age, String phNum)
     {
         this.name = name;
@@ -71,7 +70,6 @@ public class UberApp
                 }
             }
         }
-    //    iL++;
     }
     
 
