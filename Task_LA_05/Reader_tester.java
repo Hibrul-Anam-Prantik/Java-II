@@ -1,5 +1,6 @@
 package Task_LA_05;
 
+// TASK 7
 public class Reader_tester {
     public static void main(String[] args) {
         Reader r1 = new Reader();
