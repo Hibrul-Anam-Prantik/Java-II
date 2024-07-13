@@ -41,24 +41,30 @@ public class MagicItem
         String[] tempItems = new String[3];
         for(int i = 0; i < items.length; i++)
         {
-            if(items[i].equals("Potion")){
+            if(items[i] != null && items[i].equals(item) && items[i].equals("Potion")) {
                 System.out.println(name + " used a " + item);
                 level += 50;
-                items[i] = "null"; // tempItems[i];       
+                items[i] = tempItems[i]; 
+                iT = i;   
+                iT--;     // i used this part to hande the index of the used items, when we have to replace that used item with new found item
                 found = true;
                 System.out.println("Energy Level after using item: " + level);
                 break;
-            } else if (items[i].equals("Elixir")){
+            } else if (items[i] != null && items[i].equals(item) && items[i].equals("Elixir")) {
                 System.out.println(name + " used a " + item);
                 level += 100;
-                items[i] = "null"; //tempItems[i];
+                items[i] = tempItems[i];
+                iT = i;
+                iT--;
                 found = true;
                 System.out.println("Energy Level after using item: " + level);
                 break;
-            } else if (items[i].equals("Amulet")){
+            } else if (items[i] != null && items[i].equals(item) && items[i].equals("Elixir")){
                 System.out.println(name + " used a " + item);
                 level += 200;
-                items[i] = "null"; //tempItems[i];
+                items[i] = tempItems[i];
+                iT = i;
+                iT--;
                 found = true;
                 System.out.println("Energy Level after using item: " + level);
                 break;
