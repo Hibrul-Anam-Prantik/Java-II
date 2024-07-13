@@ -44,5 +44,5 @@ public class Employee
         }
         System.out.println(name + " has been promoted to " + designation);
         System.out.println("New Salary: " + salary + " Tk");
-    }
+    } 
 }
