@@ -1,16 +1,12 @@
 package OOP;
 
-import java.util.Scanner;
-
 public class Tester {
     public static void main(String[] args) {
-        System.out.print("How many students are there?\n=> ");
-        Scanner sc = new Scanner(System.in);
-        int numSt = sc.nextInt();
-        sc.nextLine();
-        Student s1 = new Student(numSt);
-        s1.profileCreator(numSt);
-        System.out.println("OOP");
-        sc.close();
+        ArrayMaker am = new ArrayMaker();
+        ArrayPrinter ap = new ArrayPrinter();
+        am.makeArr2D();
+        int[][] arr;
+        arr = am.arr2D;
+        ap.print2D(arr);
     }
 }
