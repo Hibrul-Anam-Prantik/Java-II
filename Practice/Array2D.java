@@ -1,4 +1,7 @@
-package OOP;
+package Practice;
+
+import OOP.ArrayMaker;
+import OOP.ArrayPrinter;
 
 public class Array2D {
     public static void main(String[] args) 

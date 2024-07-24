@@ -1,5 +1,6 @@
-package OOP;
+package Practice;
 
+import OOP.ArrayPrinter;
 
 /*
         |1 | |2 | |3 | |4 |

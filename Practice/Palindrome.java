@@ -8,22 +8,25 @@ public class Palindrome
     {
         Scanner sc =  new Scanner (System.in);
         System.out.print("Enter a word: ");
-        String str = sc.nextLine();
+        String str = sc.nextLine().toLowerCase();
         System.out.println("======================");
         palindromeCheck(str);
     }    
     public static void palindromeCheck(String word)
-    {
-        String newWord = "";
-        for(int i = word.length() - 1; i >= 0; i--)
+    { 
+        boolean isPalindrome = false;
+        for(int i = 0; i < word.length()/2; i++)
         {
-            newWord += word.charAt(i);
+            if (word.charAt(i) == word.charAt(word.length()-1-i)) {
+                isPalindrome = true;
+            } else {
+                isPalindrome = false;
+            }
         }
-        if(newWord.equalsIgnoreCase(word)){
-            System.out.println(word+" => PALINDROME");
+        if (isPalindrome) {
+            System.out.println(word + " => Palindrome");
         } else {
-            System.out.println(word+" => NOT PALINDROME");
-            System.out.println("======================\nRearranging the letters of the word \""+word+"\" and trying to make it palindrome.");
+            System.out.println(word + " => Not Palindrome");
             makePalindrome(word);
         }
     }
@@ -31,10 +34,6 @@ public class Palindrome
     
     public static void makePalindrome(String word)
     {
-        String newWord = "";
-        for(int i = 0; ; i++)
-        {
-            
-        }    
+        System.out.println(word + " => PROCESSING");    
     }
 }

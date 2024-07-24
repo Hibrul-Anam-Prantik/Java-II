@@ -1,4 +1,6 @@
-package OOP;
+package Practice;
+
+import OOP.ArrayPrinter;
 
 // import java.util.*;
 

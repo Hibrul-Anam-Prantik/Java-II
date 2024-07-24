@@ -2,7 +2,7 @@ package OOP;
 
 import java.util.Scanner;
 
-public class Array_Stident_Info {
+public class Array_Student_Info {
     public static void main(String[] args) {
         Designer ds = new Designer();
         Scanner sc = new Scanner(System.in);

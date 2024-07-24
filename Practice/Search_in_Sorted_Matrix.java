@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import OOP.ArrayPrinter;
 
-public class Search_in_Ssorted_Matrix {
+public class Search_in_Sorted_Matrix {
     public static void main(String[] args) {
         int[][] matrix = { {10, 20, 30, 40},
                         {15, 25, 35, 45},
