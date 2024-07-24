@@ -1,6 +1,6 @@
 package OOP;
 
-public class Tester {
+public class Rough1 {
     public static void main(String[] args) {
         ArrayMaker am = new ArrayMaker();
         ArrayPrinter ap = new ArrayPrinter();
