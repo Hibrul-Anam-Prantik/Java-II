@@ -1,22 +1,28 @@
 package Practice;
 
-public class ShortestPath {
-    public static void main(String[] args) {
+public class ShortestPath 
+{
+    public static void main(String[] args) 
+    {
         String path = "NS";
         PathChecker pc = new PathChecker();
         System.out.println(pc.ShortestPath(path));
     }
 }
 
-class PathChecker {
+class PathChecker 
+{
     public String path;
 
-    double ShortestPath(String path) {
+    double ShortestPath(String path) 
+    {
         this.path = path;
         int x = 0, y = 0;
-        for (int i = 0; i < path.length(); i++) {
+        for (int i = 0; i < path.length(); i++) 
+        {
 
-            switch (path.charAt(i)) {
+            switch (path.charAt(i)) 
+            {
                 case 'N':
                     y++;
                     break;
