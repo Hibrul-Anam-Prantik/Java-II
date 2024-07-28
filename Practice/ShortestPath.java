@@ -10,29 +10,30 @@ public class ShortestPath {
 
 class PathChecker {
     public String path;
-    double ShortestPath( String path) {
+
+    double ShortestPath(String path) {
         this.path = path;
         int x = 0, y = 0;
-        for ( int i = 0; i < path.length(); i++) {
-            
+        for (int i = 0; i < path.length(); i++) {
+
             switch (path.charAt(i)) {
                 case 'N':
-                    y ++;
+                    y++;
                     break;
                 case 'S':
-                    y --;
+                    y--;
                     break;
                 case 'W':
-                    x --;
+                    x--;
                     break;
                 case 'E':
-                    x ++;
+                    x++;
                     break;
                 default:
                     break;
             }
         }
-        
-        return Math.sqrt(x*x + y*y);
+
+        return Math.sqrt(x * x + y * y);
     }
 }
