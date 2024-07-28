@@ -2,7 +2,7 @@ package Practice;
 
 public class ShortestPath {
     public static void main(String[] args) {
-        String path = "WNEENESENNN";
+        String path = "NS";
         PathChecker pc = new PathChecker();
         System.out.println(pc.ShortestPath(path));
     }
