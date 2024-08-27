@@ -11,7 +11,9 @@ public class Palindrome
         String str = sc.nextLine().toLowerCase();
         System.out.println("======================");
         palindromeCheck(str);
-    }    
+        sc.close();
+    }   
+ 
     public static void palindromeCheck(String word)
     { 
         boolean isPalindrome = false;
