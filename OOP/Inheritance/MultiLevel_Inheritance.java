@@ -1,6 +1,6 @@
 package OOP.Inheritance;
 
-public class Inheritance_MultiLevel {
+public class MultiLevel_Inheritance {
     public static void main(String[] args) {
         Cats meow = new Cats();
         meow.color = "Brown";
