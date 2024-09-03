@@ -1,3 +1,5 @@
+package Task_LA_06;
+
 public class CourseTester2{
      public static void main(String [] args){
           Course2 c1 = new Course2();

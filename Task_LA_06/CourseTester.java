@@ -1,5 +1,7 @@
-public class CourseTester{
-     public static void main(String [] args){
+package Task_LA_06;
+
+public class CourseTester {
+     public static void main(String[] args) {
           Course c1 = new Course();
           c1.createCourse("PL II", "CS11");
           System.out.println("----------------");
@@ -17,8 +19,8 @@ public class CourseTester{
           Course c2 = new Course();
           c2.createCourse("DS", "CS22");
           c2.addOneContent("Stack");
-          c2.addTwoContent("Recursion","Tree");
-          c2.addTwoContent("Heap","Hashing");
+          c2.addTwoContent("Recursion", "Tree");
+          c2.addTwoContent("Heap", "Hashing");
           System.out.println("----------------");
           c2.printDetails();
      }
