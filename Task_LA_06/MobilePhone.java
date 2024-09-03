@@ -1,3 +1,5 @@
+package Task_LA_06;
+
 public class MobilePhone 
 {
      public int contacts;

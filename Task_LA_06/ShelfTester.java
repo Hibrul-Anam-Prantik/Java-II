@@ -1,5 +1,7 @@
-public class ShelfTester{
-     public static void main(String [] args){
+package Task_LA_06;
+
+public class ShelfTester {
+     public static void main(String[] args) {
           Shelf shelf = new Shelf();
           shelf.showDetails();
           System.out.println("1---------------");

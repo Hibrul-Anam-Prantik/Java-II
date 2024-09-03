@@ -1,5 +1,7 @@
-public class LightControllerTester{
-     public static void main(String args []){
+package Task_LA_06;
+
+public class LightControllerTester {
+     public static void main(String args[]) {
           LightController c1 = new LightController();
           c1.showLightStatus();
           System.out.println("1---------------");

@@ -1,3 +1,5 @@
+package Task_LA_06;
+
 // TASK 08
 public class Shape
 {

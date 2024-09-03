@@ -1,5 +1,7 @@
-public class MobilePhoneTester{
-     public static void main(String args []){
+package Task_LA_06;
+
+public class MobilePhoneTester {
+     public static void main(String args[]) {
           MobilePhone m1 = new MobilePhone();
           MobilePhone m2 = new MobilePhone();
           m1.setContactCapacity(5);
