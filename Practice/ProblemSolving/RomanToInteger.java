@@ -25,7 +25,6 @@ class Convert {
         int i = 1, v = 5, x = 10, l = 50, c = 100, d = 500, m = 1000;
         int sum = 0;
         for(int j = 0; j < s.length(); j++) {
-            System.out.println(s.charAt(i));
             if(s.charAt(j) == 'I') {
                 sum += i;
             } else if(s.charAt(j) == 'V') {
