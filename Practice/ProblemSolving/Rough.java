@@ -1,17 +1,10 @@
 package Practice.ProblemSolving;
 import java.util.*;
 public class Rough {
-    public static void main(String[] args) {
-        int[][] a = {{1,2}, {3,4}, {2,3}, {3,0}};
-        for(int i = 0; i < 2; i ++) {
-            for(int j = 0; j < 4; j ++) {
-                System.out.print(a[j][i] + "  ");
-            }
-            System.out.println();
-        }
-        // System.out.println(Arrays.toString(a));
-        System.out.println(a.length);
-        System.out.println(a[0].length);
+    public static void main(String[] args) {  
+        int x = -10;
+        String s = "" + x;
+        System.out.println(s);
     }
 }
 class Solution {
