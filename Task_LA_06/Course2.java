@@ -1,6 +1,7 @@
 package Task_LA_06;
 
 // TASK 07
+// The Difference between Task 6  & Task 7 is that, in Task 7, we face the term Method over loading for the "addContent()" method; one has a single argument & another one has a double argument.
 public class Course2 
 {
      public String courseName;
