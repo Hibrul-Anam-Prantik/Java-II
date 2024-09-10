@@ -29,6 +29,10 @@ public class Book
             System.out.print("Title: " + title);
             System.out.print(", Author: " + author);
             System.out.println(", Price: " + price);
+        } else if(title != null && author == null && price != 0) {
+            System.out.print("Title: " + title);
+            // System.out.print(", Author: " + author);
+            System.out.println(", Price: " + price);
         }
     }
 
