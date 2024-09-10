@@ -55,8 +55,9 @@ public class Course
           if ((contents+1) <= 4){
                this.syllabus[index ++] = s2;
                System.out.println(s2 + " was added.");
-               contents ++;
-               
-          }  
+               contents ++;     
+          } else {
+               System.out.println("Cannot add more content");
+          } 
      }
 }
