@@ -55,26 +55,17 @@ public class Course2
 
      public void addContent(String s1, String s2) 
      {
-          for (int i = 0; i < 2; i++) 
-          {
-               if ((contents + 1) <= 4) {
-                    this.syllabus[index++] = s1;
-                    System.out.println(s1 + " was added.");
-                    contents++;
-                     
-               } else if (contents == 4) {
-                    System.out.println("Cannot add more content");
-                    break;
-               } else {
-                    this.syllabus[index ++] = s2;
-                    System.out.println(s2 + " was added.");
-                    contents ++;
-               }
+          if ((contents+1) <= 4){
+               this.syllabus[index ++] = s1;
+               System.out.println(s1 + " was added.");
+               contents ++;
           }
-          // if ((contents+1) <= 4){
-          // this.syllabus[index ++] = s2;
-          // System.out.println(s2 + " was added.");
-          // contents ++;
-          // }
+          if ((contents+1) <= 4){
+               this.syllabus[index ++] = s2;
+               System.out.println(s2 + " was added.");
+               contents ++;     
+          } else {
+               System.out.println("Cannot add more content");
+          }
      }
 }

@@ -21,11 +21,11 @@ public class ChickenBurger
      }
 
      public void customizeSpiceLevel(String spiceLevel) {
-          if (spiceLevel.equals("Extreme Jhaal")) {
-               System.out.println("This spice level is unavailable.");
-          } else {
+          if (spiceLevel.equals("Mild") || spiceLevel.equals("Spicy") || spiceLevel.equals("Naga") || spiceLevel.equals("Extreme")) {
                this.spiceLevel = spiceLevel;
                System.out.println("Spice level set to " + spiceLevel + ".");
+          } else {
+               System.out.println("This spice level is unavailable.");
           }
      }
 }
