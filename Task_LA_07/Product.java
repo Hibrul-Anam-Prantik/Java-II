@@ -11,7 +11,7 @@ public class Product
 
   public void displayInfo() {
     System.out.println("Product Name: " + name);
-    System.out.println("Price: $" + price);
+    System.out.print("Price: $" + price);
   }
 
   public Product(String name, double price) {
