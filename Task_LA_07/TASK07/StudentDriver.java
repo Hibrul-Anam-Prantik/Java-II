@@ -1,7 +1,9 @@
 package TASK07;
 
-public class StudentDriver {
-  public static void main(String[] args) {
+public class StudentDriver 
+{
+  public static void main(String[] args) 
+  {
     System.out.println("-----------------");
     Student student1 = new Student(12345678);
     student1.addCourse("CSE110");
