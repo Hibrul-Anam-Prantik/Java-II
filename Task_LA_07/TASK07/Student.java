@@ -1,7 +1,6 @@
 package TASK07;
 public class Student {
     private double cg;
-    // private String course;
     private String courses[];
     private int id;
     private int courseCount;
