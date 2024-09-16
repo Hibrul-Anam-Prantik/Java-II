@@ -1,7 +1,7 @@
 package TASK07;
 public class Student {
     private double cg;
-    private String course;
+    // private String course;
     private String courses[];
     private int id;
     private int courseCount;
@@ -14,6 +14,7 @@ public class Student {
 
     public Student(int id, double cg) {
         this.id = id; this.cg = cg;
+        courses = new String[4];
     }
     
     public void addCourse(String course) {
@@ -58,16 +59,23 @@ public class Student {
 
     public void addCourse(String[] courses) {
         for(int i = 0; i < courses.length; i++) {
-            if(courseCount >= 3 && cg < 3) {
-                System.out.println("Failed to add " + courses[i]);
-                System.out.println("CG is low. Can't add more than 3 courses.");
-                break;
-            } else if(courseCount >= 4) {
-                System.out.println("Failed to add " + courses[i] + "\nMaximum 4 courses allowed.");
-                break;
+            if(cg < 3) {
+                if(courseCount == 3) {
+                    System.out.println("Failed to add " + courses[i]);
+                    System.out.println("CG is low. Can't add more than 3 courses.");
+                    break;
+                } else {
+                    this.courses[idx++] = courses[i];
+                    courseCount ++;
+                }
             } else {
-                this.courses[idx++] = courses[i];
-                courseCount ++;
+                if(courseCount == 4) {
+                    System.out.println("Failed to add " + courses[i] + "\nMaximum 4 courses allowed.");
+                    break;
+                } else {
+                    this.courses[idx++] = courses[i];
+                    courseCount ++;
+                }
             }
         }
     }
