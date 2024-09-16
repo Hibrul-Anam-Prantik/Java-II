@@ -20,13 +20,13 @@ public class Shape2D {
     area = 0.5 * (base * height);
   }
 
-  boolean sides; /*
-                  * I will use this flag to determine whether the triangle has sides or not,
-                  * if the triangle has sides I will use the "printf" to print the area.
-                  */
+  // boolean sides; /*
+  //                 * I will use this flag to determine whether the triangle has sides or not,
+  //                 * if the triangle has sides I will use the "printf" to print the area.
+  //                 */
 
   public Shape2D(int a, int b, int c) {
-    sides = true;
+    // sides = true;
     shape = "Triangle";
     System.out.println("A " + shape + "  has been created withthe following sides: " + a + ", " + b + ", " + c);
     double s = 0.5 * (a + b + c); // halfPerimeter
