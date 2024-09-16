@@ -33,16 +33,9 @@ public class Shape2D
     double s = 0.5 * (a + b + c); // halfPerimeter
     double x = s * (s - a) * (s - b) * (s - c);
     area = Math.sqrt(x);
-
-    // area = Math.pow(x, 0.5);
   }
 
   public void area() {
-    // if (sides) {
-    // System.out.printf("The area of the " + shape + " is: %.02f", area);
-    // System.out.println();
-    // } else {
     System.out.println("The area of the " + shape + " is: " + area);
-    // }
   }
 }
