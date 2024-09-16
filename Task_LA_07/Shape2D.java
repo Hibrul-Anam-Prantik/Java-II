@@ -21,9 +21,9 @@ public class Shape2D {
   }
 
   // boolean sides; /*
-  //                 * I will use this flag to determine whether the triangle has sides or not,
-  //                 * if the triangle has sides I will use the "printf" to print the area.
-  //                 */
+  // * I will use this flag to determine whether the triangle has sides or not,
+  // * if the triangle has sides I will use the "printf" to print the area.
+  // */
 
   public Shape2D(int a, int b, int c) {
     // sides = true;
