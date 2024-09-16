@@ -1,5 +1,4 @@
-public class Shape2D 
-{
+public class Shape2D {
   public String shape;
   public double area;
 
