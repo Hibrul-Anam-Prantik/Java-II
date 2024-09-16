@@ -1,23 +1,36 @@
-public class RezShape2DTester {
+public class Rough {
     public static void main(String[] args) {
-      Shape2D sq = new Shape2D(5);
-      System.out.println("---------1----------");
-      sq.area();
-      System.out.println("---------2----------");
-      Shape2D rectangle = new Shape2D(5, 6);
-      System.out.println("---------3----------");
-      rectangle.area();
-      System.out.println("---------4----------");
-      Shape2D tri1 = new Shape2D(5, 6, "Triangle");
-      System.out.println("---------5----------");
-      tri1.area();
-      System.out.println("---------6----------");
-      Shape2D tri2 = new Shape2D(5, 6, 7);
-      System.out.println("---------7----------");
-      tri2.area();
-      System.out.println("---------8----------");
+        // Shape2D sq = new Shape2D(5);
+        // System.out.println("---------1----------");
+        // sq.area();
+        // System.out.println("---------2----------");
+        // Shape2D rectangle = new Shape2D(5, 6);
+        // System.out.println("---------3----------");
+        // rectangle.area();
+        // System.out.println("---------4----------");
+        // Shape2D tri1 = new Shape2D(5, 6, "Triangle");
+        // System.out.println("---------5----------");
+        // tri1.area();
+        // System.out.println("---------6----------");
+        // Shape2D tri2 = new Shape2D(5, 6, 7);
+        // System.out.println("---------7----------");
+        // tri2.area();
+        // System.out.println("---------8----------");
+        double d = 17.696943;
+        String s = "";
+        s += d;
+        int idx = 0;
+        for(int i = 0; i < s.length(); i++) {
+            if(s.charAt(i) == '.') {
+                idx = i;
+            }
+            System.out.print(s.charAt(i));
+            if(i == idx+2) {
+                break;
+            }
+        }
     }
-  }
+}
 
 class Shape2D {
     public int length;
