@@ -36,8 +36,6 @@ class Trace1 {
     public void m1(int x, double y) {
         this.y = (int) y;
         System.out.println(q[x] + " " + (++x) + " " + y);
-        System.out.println("==========");
         m2(this.y, x - 1);
-        System.out.println("==========");
     }
 }
