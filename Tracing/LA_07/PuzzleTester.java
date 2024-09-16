@@ -12,7 +12,7 @@ public class PuzzleTester {
 class Puzzle 
 {
    public int x, z;
-
+ 
    public Puzzle(int x) {
       this.x = x;
    }
