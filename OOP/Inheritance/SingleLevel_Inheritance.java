@@ -8,7 +8,7 @@ public class SingleLevel_Inheritance {
 }
 
 // Base Class
-class Human {
+class Humen {
     String skinTone;
     int age;
     void maritalStatus() 
@@ -26,7 +26,7 @@ class Human {
 }
 
 // Derived Class / Sub Class
-class Man extends Human {
+class Man extends Humen {
     void sex() 
     {
         System.out.println("Male");

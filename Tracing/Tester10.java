@@ -2,8 +2,8 @@ package Tracing;
 
 public class Tester10 {
     public static void main(String[] args) {
-        Human h1 = new Human();
-        Human h2 = new Human();
+        Human0 h1 = new Human0();
+        Human0 h2 = new Human0();
         h1.age = 21;
         h1.height = 5.5;
         System.out.println(h1.age);
@@ -22,7 +22,7 @@ public class Tester10 {
         h1.age = ++h2.age;
         System.out.println(h2.age);
         System.out.println(h2.height);}}
-class Human {
+class Human0 {
     public int age;
     public double height;
 }
