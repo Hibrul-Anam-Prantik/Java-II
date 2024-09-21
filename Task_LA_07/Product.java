@@ -1,12 +1,12 @@
-public class Product 
+package Task_LA_07;
+
+public class Product
 {
-  private String name;
-  private double price;
+  private String name = "Unknown";
+  private double price = 0;
   private int quantity;
 
   public Product() {
-    name = "Unknown";
-    price = 0.0;
   }
 
   public void displayInfo() {

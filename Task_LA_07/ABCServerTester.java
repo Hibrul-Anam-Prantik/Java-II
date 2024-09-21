@@ -1,5 +1,7 @@
+package Task_LA_07;
+
 public class ABCServerTester {
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     ABCServer server1 = new ABCServer();
     server1.details();
     System.out.println("---------------");

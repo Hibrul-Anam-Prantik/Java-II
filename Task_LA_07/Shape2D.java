@@ -1,3 +1,5 @@
+package Task_LA_07;
+
 public class Shape2D {
   public String shape;
   public double area;

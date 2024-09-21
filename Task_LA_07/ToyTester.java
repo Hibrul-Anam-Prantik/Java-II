@@ -1,3 +1,5 @@
+package Task_LA_07;
+
 public class ToyTester{
     public static void main(String[] args){
         Toy t1 = new Toy("Car", 230);

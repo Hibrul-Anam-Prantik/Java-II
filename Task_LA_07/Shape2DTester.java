@@ -1,3 +1,5 @@
+package Task_LA_07;
+
 public class Shape2DTester {
   public static void main(String[] args) {
     Shape2D sq = new Shape2D(5);

@@ -1,4 +1,6 @@
-public class Parcel 
+package Task_LA_07;
+
+public class Parcel
 {
    public String name;
    public int weight;

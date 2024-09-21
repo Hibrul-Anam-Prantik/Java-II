@@ -1,6 +1,6 @@
-package TASK07;
+package Task_LA_07.TASK07;
 
-public class StudentDriver 
+public class StudentDriver
 {
   public static void main(String[] args) 
   {

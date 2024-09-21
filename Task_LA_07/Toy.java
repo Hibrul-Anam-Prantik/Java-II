@@ -1,4 +1,6 @@
-public class Toy 
+package Task_LA_07;
+
+public class Toy
 {
     public String name;
     public int price;

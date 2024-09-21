@@ -1,17 +1,19 @@
+package Task_LA_07;
+
 public class ABCServer {
-    private String serverName;
-    private String[] name;  
+    private String serverName = "Default";
     private int idxN;   // index to add hero names
-    private String[] role;  
     private int idxR;   // index to add hero roles
-    private int capacity; 
+    private int capacity = 10;
+    private String[] name = new String[capacity];
+    private String[] role = new String[capacity];
     private int totalMembers;
     
     public ABCServer() {
-        serverName = "Default";
-        capacity = 10;
-        name = new String[capacity];
-        role = new String[capacity];
+//        serverName = "Default";
+//        capacity = 10;
+//        name = new String[capacity];
+//        role = new String[capacity];
     }
 
     public ABCServer(String serverName, int capacity) {

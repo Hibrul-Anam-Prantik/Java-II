@@ -1,7 +1,8 @@
-package TASK07;
+package Task_LA_07.TASK07;
+
 public class Student {
     private double cg;
-    private String courses[];
+    private String[] courses;
     private int id;
     private int courseCount;
     private int idx;    // index for adding courses to the array

@@ -1,4 +1,6 @@
-public class Book 
+package Task_LA_07;
+
+public class Book
 {
     public String title;
     public int price;
@@ -25,11 +27,11 @@ public class Book
         } else if(title != null && author != null && price == 0) {
             System.out.print("Title: " + title);
             System.out.println(", Author: " + author);
-        } else if(title != null && author != null && price != 0) {
+        } else if(title != null && author != null) {
             System.out.print("Title: " + title);
             System.out.print(", Author: " + author);
             System.out.println(", Price: " + price);
-        } else if(title != null && author == null && price != 0) {
+        } else if(title != null) {
             System.out.print("Title: " + title);
             System.out.println(", Price: " + price);
         }

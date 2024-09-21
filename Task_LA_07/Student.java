@@ -1,4 +1,6 @@
-public class Student 
+package Task_LA_07;
+
+public class Student
 {
     public String name;
     public String prog;
