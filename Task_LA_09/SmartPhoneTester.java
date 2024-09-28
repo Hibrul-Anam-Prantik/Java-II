@@ -52,7 +52,7 @@ class Smartphone
             if(!flag) {
                 features[index] = feature;
                 properties[index] = property;
-                index ++; // count ++;
+                index ++;
             }
         }
     }
