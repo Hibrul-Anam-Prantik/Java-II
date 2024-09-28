@@ -39,5 +39,4 @@ class Puzzle
       x = x + 1;
       System.out.println(z + " " + x);
    }
-
 }
