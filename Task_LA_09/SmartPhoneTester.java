@@ -1,8 +1,5 @@
 package Task_LA_09;
 
-import java.net.SocketOption;
-import java.net.StandardSocketOptions;
-
 public class SmartPhoneTester
 {
     public static void main(String[] args) {
@@ -42,14 +39,14 @@ class Smartphone
     void addFeature(String feature, String property) {
         if(name == null ) System.out.println("Feature can not be added without phone name");
         else {
-            boolean flag = false;
+            boolean stored = false;
             for(int i = 0; i < index; i++) {
                 if(features[i].equals(feature)) {
                     properties[i] += ", " + property;
-                    flag = true;
+                    stored = true;
                 }
             }
-            if(!flag) {
+            if(!stored) {
                 features[index] = feature;
                 properties[index] = property;
                 index ++;
