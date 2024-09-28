@@ -43,15 +43,13 @@ class Dog extends Animal
         super(name, age, color);
         this.breed = breed;
     }
-
+// Method OverRide "makeSound()"
     public void makeSound() {
-        sound = "barking";
-        System.out.println(color + " color " + name + " is " + sound);
+        System.out.println(color + " color " + name + " is barking");
     }
-
+// Method OverRide "info()"
     public String info() {
-        String info = super.info();
-        return info + "Breed: " + breed;
+        return super.info() + "Breed: " + breed;
     }
 }
 
@@ -62,7 +60,6 @@ class Cat extends Dog
     }
 
     public void makeSound() {
-        sound = "meowing";
-        System.out.println(color + " color " + name + " is " + sound);
+        System.out.println(color + " color " + name + " is meowing");
     }
 }
