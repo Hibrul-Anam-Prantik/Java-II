@@ -1,4 +1,4 @@
-package Quiz;
+package Practice;
 
 public class GetSet
 
