@@ -18,6 +18,11 @@ public class Tester
         pussy.action();
         pussy.eat();
         System.out.println(pussy.name+ "'s (" + pussy.color + " " + pussy.animal + ") price: " + pussy.getPrice() + " $.");
+
+        // Casting
+        Object dog = new Dog();
+        Dog dg = (Dog) dog;
+        dg.eat();
     }
 }
 
