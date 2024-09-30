@@ -17,6 +17,11 @@ public class NonPrimitive
         Person per = (Person) st;
         per.print();
 
+        Object str = "DX";
+        String realStr = (String) str;
+        System.out.println(realStr);
+        System.out.println(str.equals(realStr));
+
         // Down Casting
         Student stu = (Student) new Person();  // While running, it will show exception
         stu.print();
@@ -26,6 +31,5 @@ public class NonPrimitive
         // we can write this
         Student stu = (Student) new Person();
  */
-
     }
 }
