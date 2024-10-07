@@ -8,7 +8,7 @@ public class HotChocolate
     public static double tooHot = 185;
     public static double tooCold = 160;
 
-    public static void drinkHotChocolate(double cocoaTemp) throws TooHotException, TooColdException
+    public static void drinkHotChocolate(double cocoaTemp) throws TemperatureException
     {
         if(cocoaTemp >= tooHot) {
             throw new TooHotException();
@@ -34,7 +34,7 @@ public class HotChocolate
 //    }
 
     // Advanced
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws TemperatureException, InterruptedException {
         double currentCocoaTemp = 150;
         boolean wrongTemp = true;
 
