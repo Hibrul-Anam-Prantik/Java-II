@@ -7,20 +7,11 @@ public class TryCatchFinally
             int myInt;
             myInt = Integer.parseInt("String");
             System.out.println("After parsing we get: " + myInt);
-//            int[] arr = {1,2,3};
-//            System.out.println(arr[3]);
-//            myInt = Integer.parseInt(null);
-//            System.out.println(myInt);
+            System.out.println(myInt);
         } catch(NumberFormatException | NullPointerException | IndexOutOfBoundsException e) {
-            System.out.println(e.getMessage());
-        }
-//        catch(NullPointerException npe) {
-//            System.out.println(npe.getMessage());
-//        } catch(IndexOutOfBoundsException iobe) {
-//            System.out.println(iobe.getMessage());
-//        }
-        finally {
-            System.out.println("DONE");
+            System.out.println(e);
+        } finally {
+            System.out.println("DONE");   // no matter what, this statement will be printed
         }
         System.out.println ("=================");
     }
