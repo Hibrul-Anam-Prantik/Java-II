@@ -17,6 +17,7 @@ public class HotChocolate
         }
     }
 
+//    Basic
 //    public static void main(String[] args)
 //    {
 //        double currentCocoaTemp = 170;
