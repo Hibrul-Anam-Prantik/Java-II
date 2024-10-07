@@ -1,4 +1,4 @@
-package ExceptionHandling.Exception;
+package ExceptionHandling.CustomException;
 
 import java.util.concurrent.TimeUnit;
 
