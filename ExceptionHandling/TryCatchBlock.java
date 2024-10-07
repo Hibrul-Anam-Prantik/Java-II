@@ -38,10 +38,6 @@ public class TryCatchBlock {
 //        } catch(IndexOutOfBoundsException iobe) {
 //            System.out.println(iobe.getMessage());
 //        }
-        finally {
-            System.out.println("DONE");
-        }
-        System.out.println ("=================");
     }
      */
 }
