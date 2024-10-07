@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TryCatchBlock
 {
-    TryCatchBlock(String str) {
+    public void tryCatch(String str) {
         try {
             int i = Integer.parseInt(str);
             System.out.println(i);
@@ -17,6 +17,7 @@ public class TryCatchBlock
         Scanner sc = new Scanner(System.in);
         String S = sc.nextLine();
         sc.close();
-        TryCatchBlock tcb = new TryCatchBlock(S);
+        TryCatchBlock tcb = new TryCatchBlock();
+        tcb.tryCatch(S);
     }
 }
